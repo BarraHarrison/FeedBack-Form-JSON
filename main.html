@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Project (Where we store text)</title>
+</head>
+    <body>
+        <h1>Please give us feedback</h1>
+
+        <div class="form-container">
+            <form action="" id="positiveForm">
+                <label for="positiveInput">Enter some positive feedback</label>
+                <input type="text" id="positiveInput" name="positiveInput" placeholder="Enter feedback here" required>
+                <button type="submit" id="positiveButton">Submit</button>
+            </form>
+
+            <form action="" id="negativeForm">
+                <label for="negativeInput">Enter what you think could be improved</label>
+                <input type="text" id="negativeInput" name="negativeInput" placeholder="Enter feedback here" required>
+                <button type="submit" id="negativeButton">Submit</button>
+            </form>
+        </div>
+
+        <div id="display"></div>
+        <div id="textList"></div>
+
+        <table>
+            <tr>
+                <td id="positiveList"></td>
+                <td id="negativeList"></td>
+            </tr>
+        </table>
+
+        <!-- FileSaver.js Library external Link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+        <script src="form.js"></script>
+    </body>
+</html>
